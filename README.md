@@ -9,9 +9,17 @@
 
 ## Instalation
 
-> npx install-peerdeps --dev @k.sh/eslint-config
+- `npx install-peerdeps --dev @k.sh/eslint-config`
 
-Create a `.prettierrc`:
+- Update `.eslintrc` file
+
+```json
+{
+  "extends": ["@k.sh/eslint-config"]
+}
+```
+
+- Create a `.prettierrc` file
 
 ```json
 {
