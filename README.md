@@ -6,7 +6,11 @@
 [![Build Status](https://travis-ci.org/buz-zard/eslint-config.svg?branch=master)](https://travis-ci.org/buz-zard/eslint-config)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-`.prettierrc`
+## Instalation
+
+> npx install-peerdeps --dev @k.sh/eslint-config
+
+Create a `.prettierrc`:
 
 ```json
 {
