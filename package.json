@@ -1,0 +1,9 @@
+{
+  "name": "@k.sh/eslint-config",
+  "version": "0.0.0",
+  "description": "ESLint config based on Airbnb",
+  "main": "index.js",
+  "repository": "git@github.com:buz-zard/eslint-config.git",
+  "author": "Karolis Šarapnickis <pastas.k@gmail.com>",
+  "license": "MIT"
+}
