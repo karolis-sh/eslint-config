@@ -1,6 +1,6 @@
 # eslint-config
 
-> ESLint config based on Airbnb
+> ESLint config based on Airbnb with added prettier integration.
 
 [![npm version](https://badge.fury.io/js/%40k.sh%2Feslint-config.svg)](https://badge.fury.io/js/%40k.sh%2Feslint-config)
 [![Build Status](https://travis-ci.org/buz-zard/eslint-config.svg?branch=master)](https://travis-ci.org/buz-zard/eslint-config)
