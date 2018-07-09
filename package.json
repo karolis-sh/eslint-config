@@ -5,5 +5,13 @@
   "main": "index.js",
   "repository": "git@github.com:buz-zard/eslint-config.git",
   "author": "Karolis Šarapnickis <pastas.k@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  }
 }
