@@ -7,7 +7,7 @@ notifications:
 node_js:
   - "10"
 before_install:
-  - "[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest"
+  - if [[ `npm -v` != 6* ]]; then npm install -g npm@6; fi
   - npm install -g greenkeeper-lockfile
 install: case $TRAVIS_BRANCH in greenkeeper*) npm i;; *) npm ci;; esac;
 before_script: greenkeeper-lockfile-update
