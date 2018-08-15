@@ -19,7 +19,7 @@
   "scripts": {
     "format": "sort-package-json",
     "lint": "run-p lint:*",
-    "lint:md": "markdownlint $(find . -name '*.md' -not -path '**/node_modules/*')",
+    "lint:md": "markdownlint *.md -i node_modules",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
