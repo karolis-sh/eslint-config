@@ -13,4 +13,6 @@ after_success:
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
-script: npm run lint
+script:
+  - npm run lint
+  - npm run check-deps

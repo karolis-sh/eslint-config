@@ -21,6 +21,7 @@
     "lint": "run-p lint:*",
     "lint:md": "markdownlint *.md -i node_modules",
     "semantic-release": "semantic-release",
+    "check-deps": "npm ls >/dev/null",
     "travis-deploy-once": "travis-deploy-once"
   },
   "config": {
