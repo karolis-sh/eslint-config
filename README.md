@@ -9,7 +9,7 @@
 
 ## Installation
 
-- `npx install-peerdeps --dev @k.sh/eslint-config`
+- `npm i -D @k.sh/eslint-config`
 
 - Update `.eslintrc` file
 
