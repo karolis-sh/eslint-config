@@ -9,7 +9,7 @@ node_js:
 install:
   - npm ci
 after_success:
-  - npx travis-deploy-once && npx semantic-release
+  - npx semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
