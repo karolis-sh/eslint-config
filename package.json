@@ -35,12 +35,12 @@
   },
   "dependencies": {
     "eslint": "^5.3.0",
-    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "^7.9.1",
+    "eslint-plugin-react": "^7.11.1",
     "prettier": "^1.13.7"
   },
   "devDependencies": {
@@ -59,7 +59,13 @@
     "commitMessages": {
       "initialDependencies": "feat(package): update dependencies",
       "dependencyUpdate": "feat(package): update ${dependency} to version ${version}"
-    }
+    },
+    "ignore": [
+      "eslint",
+      "eslint-plugin-import",
+      "eslint-plugin-jsx-a11y",
+      "eslint-plugin-react"
+    ]
   },
   "husky": {
     "hooks": {
