@@ -14,5 +14,5 @@ branches:
   except:
     - /^v\d+\.\d+\.\d+$/
 script:
-  - npm run lint
+  - npm run qa
   - npm run check-deps
