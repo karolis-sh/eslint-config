@@ -6,13 +6,17 @@ notifications:
   email: false
 node_js:
   - "10"
-install:
-  - npm ci
-after_success:
-  - npx semantic-release
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+before_install:
+  - if [[ `npm -v` != 6* ]]; then npm install -g npm@6; fi
+  - npm install -g greenkeeper-lockfile
+install: case $TRAVIS_BRANCH in greenkeeper*) npm i;; *) npm ci;; esac;
+before_script: greenkeeper-lockfile-update
 script:
   - npm run lint
   - npm run check-deps
+after_script: greenkeeper-lockfile-upload
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
+after_success:
+  - npx semantic-release
