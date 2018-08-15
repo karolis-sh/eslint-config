@@ -2,33 +2,40 @@
   "name": "@k.sh/eslint-config",
   "version": "0.0.0-development",
   "description": "ESLint config based on Airbnb",
-  "main": "index.js",
-  "repository": "git@github.com:buz-zard/eslint-config.git",
-  "author": "Karolis Šarapnickis <pastas.k@gmail.com>",
+  "keywords": [
+    "airbnb",
+    "eslint",
+    "prettier",
+    "react"
+  ],
   "homepage": "https://github.com/buz-zard/eslint-config/blob/master/README.md",
   "bugs": {
     "url": "https://github.com/buz-zard/eslint-config/issues"
   },
-  "keywords": [
-    "eslint",
-    "airbnb",
-    "prettier",
-    "react"
-  ],
+  "repository": "git@github.com:buz-zard/eslint-config.git",
   "license": "MIT",
-  "engines": {
-    "node": ">=8.3"
+  "author": "Karolis Šarapnickis <pastas.k@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "format": "sort-package-json",
+    "lint": "run-p lint:*",
+    "lint:md": "markdownlint $(find . -name '*.md' -not -path '**/node_modules/*')",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "scripts": {
-    "lint": "run-p lint:*",
-    "lint:md": "markdownlint $(find . -name '*.md' -not -path '**/node_modules/*')",
-    "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.0.0-rc.13",
+    "markdownlint-cli": "^0.10.0",
+    "npm-run-all": "^4.1.3",
+    "semantic-release": "^15.6.3",
+    "sort-package-json": "^1.15.0",
+    "travis-deploy-once": "^5.0.1"
   },
   "peerDependencies": {
     "eslint": "^4.19.1",
@@ -40,13 +47,8 @@
     "eslint-plugin-react": "^7.9.1",
     "prettier": "^1.13.7"
   },
-  "devDependencies": {
-    "cz-conventional-changelog": "^2.1.0",
-    "husky": "^1.0.0-rc.13",
-    "markdownlint-cli": "^0.10.0",
-    "npm-run-all": "^4.1.3",
-    "travis-deploy-once": "^5.0.1",
-    "semantic-release": "^15.6.3"
+  "engines": {
+    "node": ">=8.3"
   },
   "husky": {
     "hooks": {
