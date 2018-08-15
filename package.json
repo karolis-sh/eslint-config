@@ -55,6 +55,12 @@
   "engines": {
     "node": ">=8.3"
   },
+  "greenkeeper": {
+    "commitMessages": {
+      "initialDependencies": "feat(package): update dependencies",
+      "dependencyUpdate": "feat(package): update ${dependency} to version ${version}"
+    }
+  },
   "husky": {
     "hooks": {
       "pre-push": "npm run lint"
