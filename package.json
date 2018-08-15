@@ -18,8 +18,9 @@
   "main": "index.js",
   "scripts": {
     "check-deps": "npm ls >/dev/null",
-    "format": "sort-package-json",
+    "format": "prettier --write '**/*.*' && sort-package-json",
     "lint": "run-p lint:*",
+    "lint:js": "eslint .",
     "lint:md": "markdownlint *.md -i node_modules",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once",
