@@ -26,7 +26,7 @@
     "semantic-release": "semantic-release",
     "test": "eslint --print-config . | eslint-config-prettier-check",
     "travis-deploy-once": "travis-deploy-once",
-    "update-deps": "npm-check -u"
+    "upgrade-interactive": "npm-check -u"
   },
   "config": {
     "commitizen": {
