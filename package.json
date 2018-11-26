@@ -28,6 +28,12 @@
     "travis-deploy-once": "travis-deploy-once",
     "upgrade-interactive": "npm-check -u"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint"
+    }
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -68,11 +74,6 @@
       "eslint-plugin-jsx-a11y",
       "eslint-plugin-react"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run lint"
-    }
   },
   "lint-staged": {
     "package.json": [
