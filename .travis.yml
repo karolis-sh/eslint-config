@@ -5,15 +5,11 @@ cache:
 notifications:
   email: false
 node_js:
-  - "10"
-before_install:
-  - '[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest'
-  - npm install -g greenkeeper-lockfile
-install: npm install
-before_script: greenkeeper-lockfile-update
-after_script: greenkeeper-lockfile-upload
+  - '10'
+  - '9'
+  - '8'
 after_success:
-  - npx semantic-release
+  - npm run travis-deploy-once "npm run semantic-release"
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
