@@ -66,8 +66,8 @@
   },
   "greenkeeper": {
     "commitMessages": {
-      "initialDependencies": "feat(package): update dependencies",
-      "dependencyUpdate": "feat(package): update ${dependency} to version ${version}"
+      "initialDependencies": "feat(dependency): update dependencies",
+      "dependencyUpdate": "feat(dependency): update ${dependency} to version ${version}"
     },
     "ignore": [
       "eslint",
