@@ -8,6 +8,8 @@ node_js:
   - '10'
   - '9'
   - '8'
+# Until https://github.com/greenkeeperio/greenkeeper-lockfile/issues/156 is resolved
+install: case $TRAVIS_BRANCH in greenkeeper*) npm i;; *) npm ci;; esac;
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
 branches:
