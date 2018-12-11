@@ -40,7 +40,7 @@
     }
   },
   "dependencies": {
-    "eslint": "^5.9.0",
+    "eslint": "^5.10.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.14.0",
@@ -57,8 +57,8 @@
     "npm-check": "^5.9.0",
     "npm-run-all": "^4.1.5",
     "pretty-quick": "^1.8.0",
-    "semantic-release": "^15.12.1",
-    "sort-package-json": "^1.16.0",
+    "semantic-release": "^15.12.5",
+    "sort-package-json": "^1.17.0",
     "travis-deploy-once": "^5.0.9"
   },
   "engines": {
@@ -66,8 +66,8 @@
   },
   "greenkeeper": {
     "commitMessages": {
-      "initialDependencies": "feat(package): update dependencies",
-      "dependencyUpdate": "feat(package): update ${dependency} to version ${version}"
+      "initialDependencies": "feat(dependency): update dependencies",
+      "dependencyUpdate": "feat(dependency): update ${dependency} to version ${version}"
     },
     "ignore": [
       "eslint",
