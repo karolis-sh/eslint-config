@@ -20,13 +20,8 @@
 }
 ```
 
-- Create a `.prettierrc` file
+- Create a `prettier.config.js` file
 
-```json
-{
-  "semi": true,
-  "singleQuote": true,
-  "trailingComma": "es5",
-  "printWidth": 100
-}
+```js
+module.exports = require('@k.sh/eslint-config/prettier');
 ```
