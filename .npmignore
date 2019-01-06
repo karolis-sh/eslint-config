@@ -1,2 +1,4 @@
 *
+!/eslint
+!/prettier
 !./index.js
