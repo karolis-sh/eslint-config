@@ -11,11 +11,15 @@ node_js:
 before_install: if [[ `npm -v` != 6* ]]; then npm install -g npm@6; fi
 # Until https://github.com/greenkeeperio/greenkeeper-lockfile/issues/156 is resolved
 install: case $TRAVIS_BRANCH in greenkeeper*) npm i;; *) npm ci;; esac;
-after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
 script:
   - npm run qa
   - npm run check-deps
+
+jobs:
+  include:
+    - stage: release
+      script:
+        - npm run semantic-release
