@@ -8,11 +8,7 @@
     "prettier",
     "react"
   ],
-  "homepage": "https://github.com/buz-zard/eslint-config/blob/master/README.md",
-  "bugs": {
-    "url": "https://github.com/buz-zard/eslint-config/issues"
-  },
-  "repository": "git@github.com:buz-zard/eslint-config.git",
+  "repository": "git@github.com:karolis-sh/eslint-config.git",
   "license": "MIT",
   "author": "Karolis Šarapnickis <pastas.k@gmail.com>",
   "main": "index.js",
