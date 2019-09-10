@@ -73,17 +73,5 @@
   },
   "engines": {
     "node": ">=8.3"
-  },
-  "greenkeeper": {
-    "commitMessages": {
-      "initialDependencies": "feat(dependency): update dependencies",
-      "dependencyUpdate": "feat(dependency): update ${dependency} to version ${version}"
-    },
-    "ignore": [
-      "eslint",
-      "eslint-plugin-import",
-      "eslint-plugin-jsx-a11y",
-      "eslint-plugin-react"
-    ]
   }
 }
