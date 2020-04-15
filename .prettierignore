@@ -1,6 +1,7 @@
 *.*
 !*.js
 !*.json
+!*.yml
 
 # npm files
 node_modules
