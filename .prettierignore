@@ -2,8 +2,12 @@
 !*.js
 !*.json
 !*.yml
+!*.md
 
 # npm files
 node_modules
 package.json
 package-lock.json
+
+# build products
+CHANGELOG.md
