@@ -13,8 +13,3 @@ script:
   - npm run qa
   - npm run check-deps
 
-jobs:
-  include:
-    - stage: release
-      script:
-        - npm run semantic-release
