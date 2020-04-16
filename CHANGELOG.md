@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.16.1](https://github.com/karolis-sh/eslint-config/compare/v1.16.0...v1.16.1) (2020-04-16)
+
+
+### Bug Fixes
+
+* fix missing typescript file ([6ca41bd](https://github.com/karolis-sh/eslint-config/commit/6ca41bde8791b96a0c444aa88688841fa1863ee4))
+
 ## [1.16.0](https://github.com/karolis-sh/eslint-config/compare/v1.15.0...v1.16.0) (2020-04-16)
 
 
