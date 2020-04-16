@@ -1,6 +1,6 @@
 {
   "name": "@k.sh/eslint-config",
-  "version": "1.14.3",
+  "version": "1.15.0",
   "description": "ESLint config based on Airbnb",
   "keywords": [
     "airbnb",
