@@ -1,4 +1,4 @@
 *
-!/eslint
 !/prettier
 !./index.js
+!./typescript.js

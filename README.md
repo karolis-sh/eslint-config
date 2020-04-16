@@ -14,7 +14,13 @@
 
 ```json
 {
-  "extends": ["@k.sh/eslint-config"]
+  "extends": ["@k.sh/eslint-config"],
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "extends": ["@k.sh/eslint-config/typescript"]
+    }
+  ]
 }
 ```
 
