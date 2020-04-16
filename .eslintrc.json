@@ -1,3 +1,9 @@
 {
-  "extends": ["./eslint/index.js"]
+  "extends": ["./index.js"],
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "extends": ["./typescript.js"]
+    }
+  ]
 }
