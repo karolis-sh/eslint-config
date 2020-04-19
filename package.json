@@ -22,7 +22,6 @@
     "prerelease": "git checkout master && git pull && npm i",
     "release": "npm run qa && standard-version && git push --follow-tags --no-verify && npm publish",
     "test": "eslint --print-config index.js | eslint-config-prettier-check",
-    "travis-deploy-once": "travis-deploy-once",
     "upgrade-airbnb": "npx install-peerdeps eslint-config-airbnb",
     "upgrade-interactive": "npm info 'eslint-config-airbnb@latest' peerDependencies && echo 'Do not update these 🔼\n' && npm-check -u"
   },
