@@ -13,22 +13,22 @@
   "author": "Karolis Šarapnickis <pastas.k@gmail.com>",
   "main": "index.js",
   "scripts": {
+    "bump": "npm info 'eslint-config-airbnb@latest' peerDependencies && echo 'Do not update these 🔼\n' && yarn upgrade-interactive --latest",
+    "bump-airbnb": "npx install-peerdeps eslint-config-airbnb && yarn",
     "check-deps": "sh ./scripts/validate-dependencies.sh",
     "format": "prettier --write '**/*.*' && sort-package-json",
     "lint": "run-p lint:*",
     "lint:js": "eslint .",
     "lint:md": "markdownlint *.md -i node_modules -i CHANGELOG.md",
     "qa": "run-p test lint check-deps",
-    "prerelease": "git checkout master && git pull && npm i",
-    "release": "npm run qa && standard-version && git push --follow-tags --no-verify && npm publish",
-    "test": "eslint --print-config index.js | eslint-config-prettier-check",
-    "upgrade-airbnb": "npx install-peerdeps eslint-config-airbnb",
-    "upgrade-interactive": "npm info 'eslint-config-airbnb@latest' peerDependencies && echo 'Do not update these 🔼\n' && npm-check -u"
+    "prerelease": "git checkout master && git pull && yarn i",
+    "release": "yarn qa && standard-version && git push --follow-tags --no-verify && yarn publish",
+    "test": "eslint --print-config index.js | eslint-config-prettier-check"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm run lint"
+      "pre-push": "yarn lint"
     }
   },
   "lint-staged": {
@@ -64,13 +64,12 @@
     "cz-conventional-changelog": "^3.1.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.3",
-    "markdownlint-cli": "^0.22.0",
-    "npm-check": "^5.9.2",
+    "markdownlint-cli": "^0.23.2",
     "npm-run-all": "^4.1.5",
-    "pretty-quick": "^2.0.1",
+    "pretty-quick": "^3.0.1",
     "sort-package-json": "^1.41.0",
-    "standard-version": "^8.0.1",
-    "typescript": "^3.8.3"
+    "standard-version": "^9.0.0",
+    "typescript": "^4.0.2"
   },
   "engines": {
     "node": ">=8.3"
