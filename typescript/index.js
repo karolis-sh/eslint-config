@@ -1,12 +1,7 @@
+const base = require('./base');
+
 module.exports = {
-  extends: [
-    'airbnb-typescript',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react',
-  ],
+  ...base,
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.d.ts'],
     'import/parsers': {

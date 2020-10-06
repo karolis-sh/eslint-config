@@ -1,4 +1,5 @@
 *
-!/prettier
 !index.js
-!typescript.js
+!/prettier/**/*
+!/javascript/**/*
+!/typescript/**/*
