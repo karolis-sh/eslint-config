@@ -21,7 +21,7 @@
     "lint:js": "eslint .",
     "lint:md": "markdownlint *.md -i node_modules -i CHANGELOG.md",
     "qa": "run-p test lint check-deps",
-    "prerelease": "git checkout master && git pull && yarn i",
+    "prerelease": "git checkout master && git pull && yarn",
     "release": "yarn qa && standard-version && git push --follow-tags --no-verify",
     "test": "eslint --print-config index.js | eslint-config-prettier-check"
   },
