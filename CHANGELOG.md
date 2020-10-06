@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/karolis-sh/eslint-config/compare/v1.16.1...v1.17.0) (2020-10-06)
+
+
+### Features
+
+* expose base setup ([66b8ccb](https://github.com/karolis-sh/eslint-config/commit/66b8ccb4443fc15a36c67e85748deb524dd37f9f))
+
 ### [1.16.1](https://github.com/karolis-sh/eslint-config/compare/v1.16.0...v1.16.1) (2020-04-16)
 
 
