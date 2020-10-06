@@ -5,8 +5,10 @@
   "keywords": [
     "airbnb",
     "eslint",
+    "eslintconfig",
     "prettier",
-    "react"
+    "react",
+    "typescript"
   ],
   "repository": "git@github.com:karolis-sh/eslint-config.git",
   "license": "MIT",
@@ -22,7 +24,7 @@
     "lint:md": "markdownlint *.md -i node_modules -i CHANGELOG.md",
     "qa": "run-p test lint check-deps",
     "prerelease": "git checkout master && git pull && yarn",
-    "release": "yarn qa && standard-version && git push --follow-tags --no-verify",
+    "release": "yarn qa && standard-version --no-verify && git push --follow-tags --no-verify",
     "test": "eslint --print-config index.js | eslint-config-prettier-check"
   },
   "husky": {
@@ -70,8 +72,5 @@
     "sort-package-json": "^1.46.0",
     "standard-version": "^9.0.0",
     "typescript": "^4.0.3"
-  },
-  "engines": {
-    "node": ">=8.3"
   }
 }
