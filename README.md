@@ -8,9 +8,21 @@
 
 ## Installation
 
-- `npm i -D @k.sh/eslint-config`
+- `npm i -D @k.sh/eslint-config` or `yarn add --dev @k.sh/eslint-config`
 
-- Update `.eslintrc` file
+## Usage
+
+### Prettier
+
+- Create a `prettier.config.js` file:
+
+```js
+module.exports = require('@k.sh/eslint-config/prettier');
+```
+
+### ESLint
+
+- Update `.eslintrc.json` file:
 
 ```json
 {
@@ -24,8 +36,12 @@
 }
 ```
 
-- Create a `prettier.config.js` file
+### Typescript
 
-```js
-module.exports = require('@k.sh/eslint-config/prettier');
+- Update `tsconfig.json` file:
+
+```json
+{
+  "extends": "@k.sh/eslint-config/typescript/config.json"
+}
 ```

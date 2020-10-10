@@ -5,8 +5,10 @@
   "keywords": [
     "airbnb",
     "eslint",
+    "eslintconfig",
     "prettier",
-    "react"
+    "react",
+    "typescript"
   ],
   "repository": "git@github.com:karolis-sh/eslint-config.git",
   "license": "MIT",
@@ -14,16 +16,20 @@
   "main": "index.js",
   "scripts": {
     "bump": "npm info 'eslint-config-airbnb@latest' peerDependencies && echo 'Do not update these 🔼\n' && yarn upgrade-interactive --latest",
-    "bump-airbnb": "npx install-peerdeps eslint-config-airbnb && yarn",
+    "bump-airbnb": "npx install-peerdeps -Y eslint-config-airbnb",
     "check-deps": "sh ./scripts/validate-dependencies.sh",
-    "format": "prettier --write '**/*.*' && sort-package-json",
+    "format": "run-p format:*",
+    "format:package.json": "sort-package-json package.json",
+    "format:prettier": "prettier --write '**/*.*'",
     "lint": "run-p lint:*",
     "lint:js": "eslint .",
     "lint:md": "markdownlint *.md -i node_modules -i CHANGELOG.md",
     "qa": "run-p test lint check-deps",
     "prerelease": "git checkout master && git pull && yarn",
-    "release": "yarn qa && standard-version && git push --follow-tags --no-verify",
-    "test": "eslint --print-config index.js | eslint-config-prettier-check"
+    "release": "yarn qa && standard-version --no-verify && git push --follow-tags --no-verify && npm publish",
+    "test": "run-p test:*",
+    "test:js": "eslint --print-config index.js | eslint-config-prettier-check",
+    "test:ts": "eslint --print-config typescript/index.js | eslint-config-prettier-check"
   },
   "husky": {
     "hooks": {
@@ -32,14 +38,14 @@
     }
   },
   "lint-staged": {
+    "**/package.json": [
+      "sort-package-json"
+    ],
     "*.js": [
       "eslint --fix"
     ],
-    "*.{md,json}": [
+    "*.{md,json,yml}": [
       "pretty-quick --staged"
-    ],
-    "package.json": [
-      "sort-package-json"
     ]
   },
   "config": {
@@ -63,15 +69,12 @@
   "devDependencies": {
     "cz-conventional-changelog": "^3.1.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.1.3",
-    "markdownlint-cli": "^0.23.2",
+    "lint-staged": "^10.4.0",
+    "markdownlint-cli": "^0.24.0",
     "npm-run-all": "^4.1.5",
-    "pretty-quick": "^3.0.1",
-    "sort-package-json": "^1.41.0",
+    "pretty-quick": "^3.0.2",
+    "sort-package-json": "^1.46.0",
     "standard-version": "^9.0.0",
-    "typescript": "^4.0.2"
-  },
-  "engines": {
-    "node": ">=8.3"
+    "typescript": "^4.0.3"
   }
 }
