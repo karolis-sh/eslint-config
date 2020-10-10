@@ -14,7 +14,7 @@
 
 ### Prettier
 
-- Create a `prettier.config.js` file:
+- Create a `.prettierrc.js` file:
 
 ```js
 module.exports = require('@k.sh/eslint-config/prettier');
