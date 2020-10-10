@@ -6,9 +6,9 @@ const base = require('./base');
 module.exports = {
   ...base,
   rules: {
+    ...base.rules,
     'import/prefer-default-export': 0,
-    'prettier/prettier': 2,
-    'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
+    'react/jsx-filename-extension': ['warn', { extensions: ['.js'] }],
     'react/require-default-props': 0,
     'react/jsx-props-no-spreading': 0,
     'react-hooks/rules-of-hooks': 'error',
