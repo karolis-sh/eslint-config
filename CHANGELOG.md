@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.18.1](https://github.com/karolis-sh/eslint-config/compare/v1.18.0...v1.18.1) (2020-10-10)
+
+
+### Bug Fixes
+
+* update javascript base ESLint config ([090ce70](https://github.com/karolis-sh/eslint-config/commit/090ce7038a59b7ebd3570e17ffd94fd12cebc4cd))
+
 ## [1.18.0](https://github.com/karolis-sh/eslint-config/compare/v1.17.0...v1.18.0) (2020-10-10)
 
 
