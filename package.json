@@ -27,7 +27,9 @@
     "qa": "run-p test lint check-deps",
     "prerelease": "git checkout master && git pull && yarn",
     "release": "yarn qa && standard-version --no-verify && git push --follow-tags --no-verify && npm publish",
-    "test": "eslint --print-config index.js | eslint-config-prettier-check"
+    "test": "run-p test:*",
+    "test:js": "eslint --print-config index.js | eslint-config-prettier-check",
+    "test:ts": "eslint --print-config typescript/index.js | eslint-config-prettier-check"
   },
   "husky": {
     "hooks": {
