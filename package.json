@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "bump": "npm info 'eslint-config-airbnb@latest' peerDependencies && echo 'Do not update these 🔼\n' && yarn upgrade-interactive --latest",
-    "bump-airbnb": "npx install-peerdeps eslint-config-airbnb && yarn",
+    "bump-airbnb": "npx install-peerdeps -Y eslint-config-airbnb",
     "check-deps": "sh ./scripts/validate-dependencies.sh",
     "format": "run-p format:*",
     "format:package.json": "sort-package-json package.json",
