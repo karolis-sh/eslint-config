@@ -1,7 +1,7 @@
 {
   "name": "@k.sh/eslint-config",
   "version": "1.18.1",
-  "description": "ESLint config based on Airbnb",
+  "description": "A set of JavaScript linter and formatter configs",
   "keywords": [
     "airbnb",
     "eslint",
