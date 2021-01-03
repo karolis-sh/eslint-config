@@ -25,8 +25,7 @@
     "lint:js": "eslint .",
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules' '!**/node_modules' '!**/CHANGELOG.md'",
     "qa": "run-p test lint check-deps",
-    "prerelease": "git checkout master && git pull && yarn",
-    "release": "yarn qa && standard-version --no-verify && git push --follow-tags --no-verify && yarn publish",
+    "release": "yarn && yarn qa && standard-version --no-verify && git push --follow-tags --no-verify && yarn publish",
     "test": "run-p test:*",
     "test:js": "eslint-config-prettier index.js",
     "test:ts": "eslint-config-prettier typescript/index.js"
