@@ -1,6 +1,8 @@
 #!/bin/bash
 
 if [ -z "$(git status --porcelain)" ]; then
+    git checkout master
+    git pull
     yarn release
 else
     git status --porcelain
