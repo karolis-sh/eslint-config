@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.19.0](https://github.com/karolis-sh/eslint-config/compare/v1.18.1...v1.19.0) (2021-01-22)
+
+
+### Features
+
+* **deps:** upgrade packages ([1b56d7e](https://github.com/karolis-sh/eslint-config/commit/1b56d7ee100fdb64d52197da78d374b5ca6e9421))
+
+
+### Bug Fixes
+
+* update deprecated ts rule ([66c6206](https://github.com/karolis-sh/eslint-config/commit/66c6206c489f1e84b5a2a13ca64192e626c47cde))
+
 ### [1.18.1](https://github.com/karolis-sh/eslint-config/compare/v1.18.0...v1.18.1) (2020-10-10)
 
 
