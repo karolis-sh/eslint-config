@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.21.0](https://github.com/karolis-sh/eslint-config/compare/v1.20.0...v1.21.0) (2021-01-26)
+
+
+### Features
+
+* bump eslint ([dac91ff](https://github.com/karolis-sh/eslint-config/commit/dac91ffa1bafa6f9d762c10cea798811d4cce415))
+* upgrade prettier and typescript configs ([4919376](https://github.com/karolis-sh/eslint-config/commit/4919376bd27ce4df4ddcdf21be79bbfc1b081430))
+
 ## [1.20.0](https://github.com/karolis-sh/eslint-config/compare/v1.18.1...v1.20.0) (2021-01-22)
 
 
