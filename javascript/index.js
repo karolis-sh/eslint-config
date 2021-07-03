@@ -8,7 +8,6 @@ module.exports = {
   rules: {
     ...base.rules,
     'import/prefer-default-export': 0,
-    'react/jsx-filename-extension': ['warn', { extensions: ['.js'] }],
     'react/require-default-props': 0,
     'react/jsx-props-no-spreading': 0,
     'react-hooks/rules-of-hooks': 'error',
