@@ -24,33 +24,20 @@
     "lint": "run-p lint:*",
     "lint:js": "eslint .",
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules' '!**/node_modules' '!**/CHANGELOG.md'",
+    "prepare": "husky install",
     "qa": "run-p test lint check-deps",
     "release": "yarn && yarn qa && standard-version --no-verify && git push --follow-tags --no-verify && yarn publish",
     "test": "run-p test:*",
     "test:js": "eslint-config-prettier index.js",
     "test:ts": "eslint-config-prettier typescript/index.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "yarn lint"
-    }
-  },
   "lint-staged": {
-    "**/package.json": [
-      "sort-package-json"
-    ],
-    "*.js": [
-      "eslint --fix"
-    ],
-    "*.{md,json,yml}": [
-      "pretty-quick --staged"
-    ]
+    "**/package.json": "sort-package-json",
+    "*.js": "eslint --fix"
   },
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "dependencies": {
@@ -67,14 +54,14 @@
     "prettier": "^2.2.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "cz-conventional-changelog": "^3.1.0",
-    "husky": "^4.3.8",
-    "lint-staged": "^10.5.3",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^7.0.0",
+    "lint-staged": ">=10",
     "markdownlint-cli2": "^0.0.13",
     "npm-run-all": "^4.1.5",
-    "pretty-quick": "^3.1.0",
+    "pretty-quick": "^3.1.1",
     "sort-package-json": "^1.48.1",
     "standard-version": "^9.1.0",
     "typescript": "^4.1.3"
