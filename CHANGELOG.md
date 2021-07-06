@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.21.1](https://github.com/karolis-sh/eslint-config/compare/v1.21.0...v1.21.1) (2021-07-06)
+
+
+### Bug Fixes
+
+* bump airbnb deps ([105f3e7](https://github.com/karolis-sh/eslint-config/commit/105f3e725064b09c48c348a86a2dc50f4baa0508))
+* ease react/jsx-filename-extension rule ([6ef3fa9](https://github.com/karolis-sh/eslint-config/commit/6ef3fa9e9d0dddeb1aa40134069e932e52e0539a))
+* upgrade TypeScript deps ([8e3229a](https://github.com/karolis-sh/eslint-config/commit/8e3229af97f3604370bb8a388063734a3dc6202f))
+
 ## [1.21.0](https://github.com/karolis-sh/eslint-config/compare/v1.20.0...v1.21.0) (2021-01-26)
 
 
