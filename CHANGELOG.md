@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.21.2](https://github.com/karolis-sh/eslint-config/compare/v1.21.1...v1.21.2) (2021-07-07)
+
+
+### Bug Fixes
+
+* allow js and jsx file extensions ([40f0793](https://github.com/karolis-sh/eslint-config/commit/40f07936373e0d65582e61c1ae1839654c4757ee))
+
 ### [1.21.1](https://github.com/karolis-sh/eslint-config/compare/v1.21.0...v1.21.1) (2021-07-06)
 
 
