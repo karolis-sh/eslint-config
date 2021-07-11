@@ -30,7 +30,10 @@ module.exports = require('@k.sh/eslint-config/prettier');
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx"],
-      "extends": ["@k.sh/eslint-config/typescript"]
+      "extends": ["@k.sh/eslint-config/typescript"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
     }
   ]
 }
